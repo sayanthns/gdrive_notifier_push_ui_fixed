@@ -1,24 +1,14 @@
 # GDrive Notifier
 
-Custom ERPNext app that sends push status to Uptime Kuma after daily backup.
-
-## Features
-
-- Monitors private/backups for `.gz` files
-- Sends "up" or "down" to a Push URL
-- Includes a Doctype UI to set the Push URL
+ERPNext custom app that sends Push URL signals to Uptime Kuma after checking daily backup status.
 
 ## Setup
 
-1. Install the app:
-```bash
-bench get-app /path/to/gdrive_notifier_push_ui_fixed.zip
-bench --site your-site-name install-app gdrive_notifier
-```
+1. Upload this app to Frappe Cloud or your bench as a valid Frappe app.
+2. Install on the site.
+3. Go to "GDrive Notifier Settings" and paste your Uptime Kuma Push URL.
+4. Make sure scheduler is enabled.
 
-2. Open ERPNext > GDrive Notifier Settings and enter your Uptime Kuma Push URL
+## License
 
-3. Make sure scheduler is enabled:
-```bash
-bench --site your-site-name enable-scheduler
-```
+MIT
