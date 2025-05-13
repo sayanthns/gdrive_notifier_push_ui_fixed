@@ -1,0 +1,14 @@
+{
+ "doctype": "DocType",
+ "name": "GDrive Notifier Settings",
+ "module": "Gdrive Notifier",
+ "custom": 1,
+ "is_single": 1,
+ "fields": [
+  {
+   "fieldname": "kuma_webhook_url",
+   "label": "Kuma Webhook URL",
+   "fieldtype": "Data"
+  }
+ ]
+}
